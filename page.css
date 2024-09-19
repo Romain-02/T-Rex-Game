@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+div{
+    display: flex;
+    width: 40%;
+    height: 2.5%;
+}
+
+#groundContainer{
+    width: 100%;
+    height: 20px;
+    background-image: url('./image/sol.png');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    animation: scroll-image 4s linear infinite;
+}
+
+#groundContainer:after {
+    right: 0;
+    animation-delay: -5s; /* La durée de l'animation doit être la même que celle de :before */
+  }
+
+.obstacle{
+    position: absolute;
+    width: 45px;
+    height: 50px;
+    top: 380px;
+    left: 1050px;
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+img{
+    width: 3%;
+    position: absolute;
+    margin-top: -3vh;
+    margin-left: 1vw;
+}
+
+#gameOver{
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  top: 340px;
+  left: 670px;
+  font-family: 'Pixelated', Arial, sans-serif;
+  text-shadow: 1px 1px 0 black;
+  font-weight: bold;
+  color: gray;
+  font-size: 30px;
+}
+
+#score{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 320px;
+  left: 980px;
+  font-family: 'Pixelated', Arial, sans-serif;
+  text-shadow: 1px 1px 0 black;
+  font-weight: bold;
+  color: gray;
+}
+
+
+
+@keyframes scroll-image {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 150% 0;
+    }
+  }
