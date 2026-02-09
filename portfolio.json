@@ -1,0 +1,10 @@
+{
+  "title": {
+    "fr": "T-Rex Game",
+    "en": "T-Rex Game"
+  },
+  "description": {
+    "fr": "Mon premier programme JavaScript : copie du jeu T-Rex de Google avec quelques modifications, pour apprendre les bases du langage.",
+    "en": "My first JavaScript project: a copy of Google's T-Rex game with some modifications to learn the basics of the language."
+  }
+}
